@@ -1,0 +1,116 @@
+/*--animation--coeur--animation--coeur--*/
+@keyframes coeur__effect {
+    0%{  
+        opacity: 0;
+    }
+    30%{
+        opacity: .3;
+    }
+    70%{
+        opacity: .6;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+@keyframes coeur__effect1{
+    0%{  
+        opacity: 0;
+    }
+    30%{
+        opacity: .3;
+    }
+    70%{
+        opacity: .6;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+/*--animation--animation--fonctionnement--fonctionnement--*/
+.filtre__resto:hover .filtre-icon__1{
+	color: $colour-primary;
+}
+.filtre__resto:hover .filtre-icon__2{
+	color: $colour-primary;
+}
+.filtre__resto:hover .filtre-icon__3{
+	color: $colour-primary;
+}
+/*--animation--menu--animation--menu--animation--menu--*/
+.up {
+	animation: fadein 1s;
+}
+
+.up--1 {
+	animation-delay: 50ms;
+	animation-fill-mode: forwards;
+	opacity:0;
+}
+.up--2 {
+	animation-delay: 150ms;
+	animation-fill-mode: forwards;
+	opacity:0;
+}
+.up--3 {
+	animation-delay: 300ms;
+	animation-fill-mode: forwards;
+	opacity:0;
+}
+.up--4 {
+	animation-delay: 450ms;
+	animation-fill-mode: forwards;
+	opacity:0;
+}
+@keyframes fadein {
+    from {
+		transform: translateY(40px);
+        opacity:0;
+    }
+    to {
+		transform: translateY(0);
+        opacity:1;
+    }
+}
+.menu-info {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.cout {
+	padding: 38px 20px 15px 15px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.coeur{
+  	&__effet1{ 
+		transition: 5s; 
+        &:hover{            
+                opacity: 1;
+                transition: 2s;
+                content: "";        
+        }
+    }
+	&__effet{ 
+		transition: 5s; 
+        &:hover{            
+                opacity: 1;
+                transition: 2s;
+                content: "";        
+        }
+    }
+}
+.check {
+	transform: rotate(360deg);
+	transition: transform 1s;
+}
+.menu-info:hover .menu-box__button {
+	width: 70px;
+}
+.menu-info:hover .menu-box__button > .check {
+	transform: rotate(0deg);
+}
+  

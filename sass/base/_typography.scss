@@ -1,0 +1,47 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+
+}
+h1{
+    font-size: 20px;
+}
+h2{
+    font-size: 18px;
+}
+h3{
+    font-size: 16px;
+}
+p{ 
+    text-overflow: ellipsis;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+.font-marg{
+    @include marge;
+    font-size: 30px;
+    width: 60%;
+}
+.font-marg1{
+    font-size: 25px;
+    @include marge;
+    width: 90%;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.recherche{
+    font-family: 'Roboto', sans-serif;
+}
+/*--media--media--media--breakpoint--breakpoint--*/
+@media (max-width:410px){
+    .font-marg{
+        font-size: 26px;
+    }
+    .font-marg1{
+        font-size: 20px;
+    }
+}

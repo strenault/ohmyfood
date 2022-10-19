@@ -1,0 +1,49 @@
+@mixin imgtaille{
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%;
+    height: 220px;
+    border-radius: 15px 15px 0 0;
+}
+@mixin cubeLegend{
+    width: auto;
+    height: 95px;
+    border-radius: 0 0 15px 15px;
+}
+@mixin boiteMenu{
+    height: 85px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+@mixin btn{    
+    margin: 10px auto;
+    background: linear-gradient(356deg,#9356DC 20%,#FF79da 70%);
+    text-align: center;
+    font-size: 21px;
+    padding: 5px;
+    box-shadow: 2px 2px 4px gray;
+    &:hover{
+        background: linear-gradient(356deg,#9356DC 20%,#FF79da 70%);
+        filter: brightness(140%);
+        box-shadow: 4px 4px 6px gray;
+    }
+}
+@mixin btnFiltre{    
+    margin: 10px auto;
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+    box-shadow: 2px 2px 4px gray;
+    &:hover{
+        background-color: #F5EDFF;
+        box-shadow: 4px 4px 6px gray;
+    }
+}
+@mixin marge {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+}

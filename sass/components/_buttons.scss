@@ -1,0 +1,43 @@
+.header__btn{
+    @include btn;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+    color: white;
+    height: 55px;
+    width: 260px;
+    margin-bottom: 70px; 
+    margin-top: 20px;
+}
+.menu-button__btn{
+    @include btn;
+    display: flex; 
+    align-items: center;
+    justify-content: center;  
+    position: absolute;   
+    border-radius: 30px;
+    font-weight: bold;
+    height: 50px;
+    width: 220px;
+    margin-top: 40px;
+}
+.menu-box__button {
+	overflow: hidden;
+	text-align: center;
+	background: $colour-tertiaire;
+	right: 0px;
+	align-items: center;
+	transition: width 1s;
+	padding-top: 25px;
+}
+/*--media--media--media--breakpoint--breakpoint--*/
+@media (max-width:410px){
+    .header__btn{
+        height: 40px;
+        width: 209px;
+        margin-bottom: 70px; 
+        margin-top: 20px;
+        font-size: 16px;
+    }
+}

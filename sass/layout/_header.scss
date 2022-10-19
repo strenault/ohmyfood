@@ -1,0 +1,236 @@
+.logo {
+    font-family: "shrikhand";
+    background: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    &__entreprise{
+        font-family: "shrikhand";
+        text-align: center;
+        height: 36px;
+    }
+    &__retour{
+        display: flex;
+        position: absolute;
+        text-align: center;
+        left: 40px;
+        top: 24px;
+        font-size: 12px;
+    } 
+}
+.logo__acceuil{
+    display: flex;
+    font-family: "shrikhand";
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    &--images{
+       height: 40px;
+    }
+}
+.logo__menu{
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+.icon-recherche{
+    font-size: 20px;
+    margin-right: 20px;
+    justify-content: center;
+}
+.recherche__text{
+    font-size: 22px;
+}
+.recherche{
+    background-color: #eaeaea;
+    justify-content: center;
+    &__explore{
+        display: flex;
+        flex-direction: column;    
+        width: 100%;
+        background:  $colour-ground;
+    }
+    &__btn{
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    
+    }
+}
+.bloc-filtre{
+    display: flex;
+    flex-direction: column;
+
+}
+.filtre{
+    display: flex;
+    height: auto;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    &__titre{
+        margin-left: 30px;
+        font-size: 30px
+    }
+    &__resto{
+        @include btnFiltre;
+        background-color: $colour-ground;
+        height: 80px;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;        
+        width: 400px;
+        &--blocNum{
+            background-color: $colour-primary;
+            height: 30px;
+            width: 30px;
+            border-radius: 25PX;     
+            position: relative;
+            left: -20px;
+        }
+        &--num{
+            
+            position: absolute;
+            left: 11px;
+            top: -8px;
+           
+        }
+        &--text{
+            font-size: 20px;
+            margin-left: 40px;
+            font-weight: bold;
+        }
+    }
+   
+}
+.filtre-icon{
+    color: black;
+    text-align: center;
+    &__1{
+        font-size: 24px;
+        width: 20px;
+        margin-right: -10px;
+        margin-left: 10px;
+    }
+    &__2{
+        font-size: 24px;
+        width: 20px;
+        margin-left: 10px;
+    }
+    &__3{
+        font-size: 24px;
+        width: 20px;
+        margin-left: 10px;
+    }
+    
+}
+.backround3{
+    background-color: $colour-secondary;  
+}   
+/*--media--media--media--breakpoints--breakpoints--breakpoints--*/
+@media (max-width:1100px){
+    .filtre{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:490px){
+    .filtre__resto{
+        width: 350px;
+    }
+}
+@media (max-width:411px){
+.logo__acceuil{
+    margin: 10px 0px;
+        &--images{
+        height: 30px;
+        }
+}
+.recherche__text{
+    font-size: 18px;
+}
+.icon-recherche{
+    font-size: 18px;
+    margin-right: 10px;
+}
+.filtre{
+    margin-bottom: 40px;
+    &__titre{
+        margin-top: 40px;
+        margin-left: 15px;
+        font-size: 20px
+    }
+}
+.filtre-icon{
+    &__1{
+        font-size: 18px;
+         width: 20px;
+         margin-right: -9px;
+        margin-left: 10px;
+    }
+    &__2{
+        font-size: 18px;
+         width: 10px;
+         margin-left: 10px;
+    }
+    &__3{
+        font-size: 18px;
+        width: 10px;
+        margin-left: 10px;
+    }
+        
+}
+}
+@media (max-width: 390px){
+    .logo__acceuil{
+        height: 35px;
+        margin: 10px 0px;
+        &--images{
+         font-size: 18px;
+        }
+     }
+    .filtre{
+        margin-bottom: 40px;
+        &__titre{
+            margin-top: 40px;
+            margin-left: 15px;
+            font-size: 22px
+        }
+        &__resto{        
+            width: 280px;
+            &--blocNum{
+                height: 25px;
+                width: 25px;     
+                left: -15px;
+            }
+            &--num{  
+                left: 9px;
+                top: -10px;
+               
+            }
+            &--text{
+                font-size: 16px;
+                margin-left: 20px;
+            }
+        } 
+    }
+    .filtre-icon{
+        &__1{
+            font-size: 18px;
+            width: 20px;
+            margin-right: -9px;
+            margin-left: 10px;
+        }
+        &__2{
+            font-size: 18px;
+            width: 10px;
+            margin-left: 10px;
+        }
+        &__3{
+            font-size: 18px;
+            width: 10px;
+            margin-left: 10px;
+        }
+        
+    }
+}
